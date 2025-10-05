@@ -2,6 +2,8 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 import dotenv from 'dotenv'
+dotenv.config()
+
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -9,6 +11,6 @@ export default defineConfig({
     tailwindcss(),
   ],
   define: {
-    __VALUE__: `"${process.env.VALUE}"` // wrapping in "" since it's a string
+    __VALUE__: `"${process.env.VALUE}"` 
   },
 })
