@@ -1,4 +1,4 @@
-const API_BASE = process.env.VITE_REACT_APP_BACKEND_URL; 
+const API_BASE = import.meta.env.VITE_REACT_APP_BACKEND_URL; 
 console.log("Backend URL:", API_BASE);
 
 // Signup
